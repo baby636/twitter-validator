@@ -1,4 +1,4 @@
-FROM node:12.18.0-alpine3.12
+FROM node:12.22.1-alpine3.12
 
 ADD ./external-initiator /app
 ADD ./tsconfig.json /app/tsconfig.json
