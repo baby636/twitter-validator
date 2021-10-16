@@ -10,7 +10,9 @@
     "build": "tsc -p . --outDir ./dist",
     "dev": "dotenv -e test.env -- ts-node-dev -T index.ts",
     "test": "dotenv -e test.env -- jest --config jest.config.js --logHeapUsage --detectOpenHandles",
-    "generate-apidoc": "apidoc -i controllers -o ./apidoc && apidoc-markdown -p ./apidoc -o ./API.md && rm -rf ./apidoc"
+    "generate-apidoc": "apidoc -i controllers -o ./apidoc && apidoc-markdown -p ./apidoc -o ./API.md && rm -rf ./apidoc",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
   },
   "main": "index.ts",
   "dependencies": {
@@ -27,7 +29,8 @@
     "reflect-metadata": "^0.1.13",
     "routing-controllers": "0.8.1",
     "typed-rest-client": "^1.7.3",
-    "web3": "^1.2.9"
+    "web3": "^1.2.9",
+    "@snyk/protect": "latest"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.0",
@@ -48,5 +51,6 @@
     "ts-node": "^8.10.2",
     "ts-node-dev": "^1.0.0-pre.44",
     "typescript": "~3.9.3"
-  }
+  },
+  "snyk": true
 }
