@@ -19,7 +19,7 @@
     "class-transformer": "^0.2.3",
     "class-validator": "^0.12.2",
     "ethereumjs-util": "^7.0.2",
-    "express": "^4.17.1",
+    "express": "^4.19.2",
     "js-base64": "^2.5.2",
     "lodash": "^4.17.15",
     "morgan-body": "^2.4.14",
