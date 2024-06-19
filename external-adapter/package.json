@@ -27,7 +27,7 @@
     "reflect-metadata": "^0.1.13",
     "routing-controllers": "0.8.1",
     "typed-rest-client": "^1.7.3",
-    "web3": "^1.2.9"
+    "web3": "^4.0.1"
   },
   "devDependencies": {
     "@types/body-parser": "^1.19.0",
